@@ -1,0 +1,60 @@
+.section-plan{
+    text-align: center;
+    margin-bottom: 120px;
+&__title{font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+    color: #414141;};
+&__subtitle{font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    width:50%;
+    color: #6c6c6c;
+    margin: 16px auto 66px auto;};
+&-cards{
+    display: flex;
+    justify-content: center;
+    &__card{
+        flex-basis: 370px;
+        padding: 52px 44px 67px 44px;
+        .title{    font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+          };
+        .price{ 
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 86px;
+            text-align: center;
+            color: #fe4fa7;
+          };
+        .description{    font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            color: #6c6c6c;
+            margin: 24px auto;}
+       &.active{
+        background-color: #f6fafd;
+       }
+       .button{
+           @include button;
+           text-decoration: none;
+          color:black;
+          border:1px solid black;
+          padding: 16px 52px;
+           &.active{
+              color:white; 
+              border:none;
+              background: linear-gradient(90deg, #5bfe76 2.77%, #4fc7fe 97.42%); 
+           }
+       }
+    }
+}
+}

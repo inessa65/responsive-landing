@@ -1,0 +1,91 @@
+.wrapper{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.section-header{
+
+    background-image: url('../../image/post_5d3daecacdeb1.jpg') ;
+   background-size: cover;
+   position: relative;
+
+   &-inner{
+       height: 100vh;
+       z-index: 10;
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       max-width: 1180px;
+       margin: 0 auto;
+   }
+   &::before{
+       content: '';
+       top: 0;
+       left: 0;
+       position: absolute;
+       right: 0;
+       z-index: 5;
+       bottom: 0;
+       
+       background-color: rgba(0, 0, 0, 0.5);
+   }
+   
+   &-logo{
+color:white;
+font-weight: bold;
+font-size: 24px;
+flex-shrink: 1;
+padding-top: 35px;
+}
+
+    &-content{
+        flex-grow: 1;
+        color:white;
+        display: flex;
+        align-items: center;
+       
+    }
+    &-wrapper{
+        width:100%;
+        &__title{
+            text-align: center;
+            font-weight: bold;
+            font-size: 56px;
+            line-height: 60px;
+            margin-bottom: 16px;
+        }
+        &__subtitle{
+            text-align: center;
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 44px;
+        }
+        &__form{
+            display: flex;
+          
+            &-input{
+                flex:1;
+                padding-right: 40px;
+                input{
+                    margin: 0;
+                    padding: 16px 20px;
+                    font-size: 16px;
+                    border:none;
+                    width: 100%;
+                    outline: none;
+                    border-radius: 4px;
+                    background: rgba(225,225,225, .25);
+color:white;
+                     &::placeholder{
+                         color: white;
+                     }
+                }
+            }
+            &-button{
+                button{
+                 @include button; 
+                 background: linear-gradient(90deg, #5bfe76 2.77%, #4fc7fe 97.42%);
+                }
+            }
+        }
+    }
+}

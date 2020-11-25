@@ -1,0 +1,33 @@
+.section-offer{
+    background: linear-gradient(90deg, #5bfe76 2.77%, #4fc7fe 97.42%);
+    margin-bottom: 120px;
+   
+    text-align: center;
+    color:white;
+    &-inner{
+        padding: 120px 0;
+    }
+    &__title{
+        font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 60px;
+    }
+    &__text{
+        font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 25px auto;
+    width:50%;
+    }
+    .button{
+        @include button;
+        text-decoration: none;
+          color:black;
+          border:none;
+          padding: 16px 52px;
+          background-color: white;
+    }
+}
